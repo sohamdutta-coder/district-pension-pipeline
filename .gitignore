@@ -20,12 +20,22 @@ data/ml/
 data/raw/*
 !data/raw/.gitkeep
 
-# Spark and application logs
-logs/
-*.log
-
-# macOS files
-.DS_Store
-
 # Generated output
 output/
+
+# Airflow
+logs/
+airflow.db
+airflow.cfg
+webserver_config.py
+standalone_admin_password.txt
+
+# Application logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
